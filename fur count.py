@@ -10,3 +10,4 @@ color_counts = squirrel_data['Primary Fur Color'].value_counts().to_frame()
 color_counts = color_counts.reset_index()
 color_counts.columns = ['Primary Fur Color', 'Count']
 print(color_counts)
+color_counts.to_csv('./US-map/fur_count.csv', index=False)
